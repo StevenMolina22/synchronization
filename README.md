@@ -1,6 +1,29 @@
 # Synchronization
 
-Ejemplo simple de sincronizacion entre procesos usando semaforos con Tokio.
+Ejemplos simples de sincronizacion entre procesos usando semaforos con Tokio.
+
+## Ejercicios
+
+- `ejercicio_1`: cinta transportadora con sopladores, llenadores y
+  empaquetadores.
+- `ejercicio_2`: sincronizacion por rondas entre procesos `RayTracer`.
+
+## Ejecutar
+
+```bash
+cargo run --bin ejercicio_1
+cargo run --bin ejercicio_2
+```
+
+El ejercicio 1 corre en loop infinito. Interrumpir con `Ctrl+C`.
+
+Para ejecutar las pruebas:
+
+```bash
+cargo test
+```
+
+## Ejercicio 2: RayTracer
 
 ## Idea
 
@@ -52,12 +75,6 @@ calcular_iluminacion()
    ronda 1 sync
         |
  dibujar_pixeles()
-```
-
-## Ejecutar
-
-```bash
-cargo run
 ```
 
 La salida puede variar porque las tareas corren concurrentemente, pero todos los

@@ -1,6 +1,6 @@
 use std::sync::Arc;
 use tokio::sync::Semaphore;
-use tokio::time::{sleep, Duration};
+use tokio::time::{Duration, sleep};
 
 const ROUNDS: usize = 2;
 const PROCESSES: usize = 4;
